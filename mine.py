@@ -46,7 +46,7 @@ for i in results['albums']:
 		artist_dict[name]['albums'][-1]['tracks'][-1]['name'] = j['name']
 		artist_dict[name]['albums'][-1]['tracks'][-1]['uri'] = j['uri']
 
-print json.dumps(artist_dict, ensure_ascii=True)
-#pp.pprint(artist_dict)
+#print json.dumps(artist_dict, ensure_ascii=True)
+pp.pprint(artist_dict)
 
 
