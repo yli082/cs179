@@ -6,7 +6,8 @@ for i in w.links:
 	p = wikipedia.WikipediaPage(title=i)
 	for j in p.links:
 		print j.encode('utf-8')
-		out = j.encode('utf-8')
+		out = {}
+		out[j.encode('utf-8')] = ''
 		try:
 			a = wikipedia.WikipediaPage(title=j)
 			html = a.html()
@@ -30,9 +31,9 @@ for i in w.links:
 					if origin == "":
 						origin += chunk[start: end].encode('utf-8')
 					else:
-						origin = origin + '%$*' + chunk[start: end].encode('utf-8')
+						origin = origin + ' ' + chunk[start: end].encode('utf-8')
 					chunk = chunk[end+1:]
-				out = out + '%&*' + origin
+				out[j.encode('utf-8')]= origin
 		except:
 			pass
 		print out
