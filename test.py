@@ -11,7 +11,6 @@ for i in w.links:
 		for j in p.links:
 			print j.encode('utf-8')
 			out = {}
-			out[j.encode('utf-8')] = ''
 			try:
 				results = sp.search(q='artist:'+j.encode('utf-8'), type='artist')
 				uri = results['artists']['items'][0]['uri']
