@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 import wikipedia, spotipy, json, pprint, sys, urllib2
-
+ 
 sp = spotipy.Spotify()
 pp = pprint.PrettyPrinter(indent=4)
 listOfStuff = []
