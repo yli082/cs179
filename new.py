@@ -1,5 +1,4 @@
 import wikipedia, spotipy, json, pprint, sys
-
 sp = spotipy.Spotify()
 pp = pprint.PrettyPrinter(indent=4)
 w = wikipedia.WikipediaPage(title="List of musicians")
