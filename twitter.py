@@ -1,7 +1,7 @@
 from tweepy.streaming import StreamListener
 from tweepy import OAuthHandler
 from tweepy import Stream
-
+ 
 access_token = "775795818586484736-LkcA44T2QkOgbSOfxBYgcwUnHTv5Bra"
 access_token_secret = "sgctVnFxaHl6x4mBek2BkeFyknfAhRSi4u8jYWqO5bJOZ"
 consumer_key = "pqQubwme26Rh73vvRQ5ptuXm7"
